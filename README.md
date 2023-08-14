@@ -1,1 +1,3 @@
 # summerSchool
+
+该仓库用于存放暑期小学期python课代码内容
