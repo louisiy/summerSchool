@@ -1,14 +1,25 @@
 class Solution:
-    str0 = ''
-
-    def __init__(self, strIn):
-        str0 = strIn
-
     def findRepeatedDnaSequences(self, s: str) -> list[str]:
-        count = 0
-        while i-len(s) > 19:
-        return
+        i = 0
+        j = 0
+        answerList = []
+        # 选取目标字符子串
+        while i+9 < len(s)-1:
+            j = i + 1
+            target = s[i:i+10]
+            # 选取比较子串
+            while j+9 < len(s)-1 :
+                compare = s[j:j+10]
+                # 比较
+                if compare == target:
+                    if target not in answerList:
+                        answerList.append(target)
+                    break
+                j += 1
+            i += 1
+        return answerList
 
-
-solu = Solution(input())
-print(solu.findRepeatedDnaSequences(solu.str0))
+#主程序
+solu = Solution()
+str0 = input("DNA：")
+print(solu.findRepeatedDnaSequences(str0))
