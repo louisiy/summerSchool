@@ -1,0 +1,15 @@
+{
+    "cSpell.ignoreWords": [
+        "Vasp",
+        "dataframe",
+        "entxyz",
+        "extxyz",
+        "iloc",
+        "matplotlib",
+        "pymatgen",
+        "pyplot",
+        "sklearn",
+        "traj",
+        "uncompress"
+    ]
+}
